@@ -1,5 +1,8 @@
 #open input file
-input = open("/home/prrg/TC/simuladorAFN/input.txt", "r")
+import os
+here = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(here, 'input.txt')
+input = open(filename, "r")
 afn = {}
 
 #string cleanup
