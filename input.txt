@@ -1,3 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           TUTORIAL PARA ARQUIVO DE ENTRADA (REGRAS DE ESCRITA)                            %
+%                                                                                                           %
+%   1. Os campos "alfabeto", "estados", "inicial", "finais" e "transicoes" devem existir.                   %
+%   2. Os campo "inicial" deve ser preenchido.                                                              %
+%   3. Múltiplas entradas em qualquer campo devem ser separadas com vírgula.                                %
+%      Caso contrário, serão contadas como uma única entrada.                                               %
+%   4. A entrada de "alfabeto" não pode ser contida em "estados".                                           %
+%      (ex.: alfabeto=q0,q1; estados=q0,q1)                                                                 %
+%   5. As entradas de "inicial" e "finais" devem ser contidas em "estados".                                 %
+%   6. "inicial" não permite multiplas entradas. Somente um estado inicial é permitido.                     %
+%   7. "transicoes" deve ser o último campo. Todas as linhas após a chamada devem ser transições.           %
+%   8. Não é permitido utilizar em qualquer campo: "%", "OUT_OF_BOUNDS", "SUCCESS", "FAILURE", "CRASHED".   %
+%   9. Não é permitido linhas em branco.                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 alfabeto=a,b
 estados=q0,q1,q2,q3,q4,q5,q6,q7
 inicial=q0
